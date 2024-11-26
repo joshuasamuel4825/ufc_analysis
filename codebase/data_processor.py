@@ -17,6 +17,7 @@ class UFCDataProcessor:
         # Remove rows with missing crucial information
         # Convert date columns
         # Handle weight classes
+        print(self.fights_data.head())
         pass
     
     def merge_rankings(self):
@@ -26,3 +27,6 @@ class UFCDataProcessor:
     def save_processed_data(self):
         """Save processed datasets"""
         pass
+
+dta = UFCDataProcessor()
+dta.load_data()
