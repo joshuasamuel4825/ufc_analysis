@@ -3,15 +3,16 @@
 from pathlib import Path
 
 # Project directory paths
-PROJECT_ROOT = Path(__file__).parent
+PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 RAW_DATA_DIR = DATA_DIR / "raw"
 PROCESSED_DATA_DIR = DATA_DIR / "processed"
 
 # Data file paths
-UFC_DATASET = RAW_DATA_DIR / "ufc-master.csv"
-RANKINGS_DATASET = RAW_DATA_DIR / "ufc-rankings.csv"
+UFC_DATASET_PATH = RAW_DATA_DIR / "ufc-master.csv"
+RANKINGS_PATH = RAW_DATA_DIR / "rankings_history.csv"
 
+print(UFC_DATASET_PATH, '   ', RANKINGS_PATH)
 # Model parameters
 RANDOM_STATE = 42
 TEST_SIZE = 0.2
